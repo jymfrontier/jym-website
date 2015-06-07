@@ -32,15 +32,6 @@
         this.shouldShowInstruction = false;
         this.shouldShowPreview = true;
         var textControlID = "editortextarea";
-//        this.convert = function(){
-//            var src = this.textSrc;
-//            src = src.replace(/\[title\]/g, "<h2>");
-//            src = src.replace(/\[\/title\]/g, "</h2>");
-//            src = src.replace(/\[content\]/g, "<strong>");
-//            src = src.replace(/\[\/content\]/g, "</strong>");
-//            alert(src);
-//            this.preview = $sce.trustAsHtml(src);
-//        };
         
         this.showPreview = function() {
             this.shouldShowPreview = true;
