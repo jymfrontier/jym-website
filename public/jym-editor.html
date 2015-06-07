@@ -8,13 +8,6 @@
         <b>This page will allow you to create a new prayer request document.</b>
     </div>
     <div style="margin-top:15px; background-color:white;">
-<!--
-        <div style="float:left; margin-right: 15px;">
-            Week from: <input date-picker type="text" class="jpm-textfield form-control" placeholder="Start date" id="start-date" required> 
-        </div>
-        <div style="">to: <input date-picker type="text" class="jpm-textfield form-control" placeholder="End date" id="end-date"         required> <button type="button" class="btn btn-primary">Submit</button>
-        </div>
--->
         <table>
             <tr>
                 <td style="width:200px;">Week from: <input date-picker type="text" class="jpm-textfield form-control" placeholder="Start date" id="start-date" required> </td>
@@ -33,7 +26,6 @@
                 <button type="button" ng-click="editCtrl.showInstruction()">help</button>
             </div>
             <textarea id="editortextarea" class="form-control" ng-model="editCtrl.textSrc" rows="30"></textarea>
-            <div><strong>debug area</strong><br> {{editCtrl.debug}}</div>
         </div>
     </div>
     <div class="jpm-editor-instruction" ng-show="editCtrl.shouldShowInstruction">

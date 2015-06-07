@@ -26,7 +26,7 @@
     });
     
     app.controller('EditorController', ['$scope', '$sce', function($scope, $sce){
-        this.textSrc = "Prayer for the Nations and Missions\nChildren obey your parents.\n1.  We praise God who will give healing. \n2.  Lord establish your army.";
+        this.textSrc = "";
         this.preview = "";
         this.debug = "";
         this.shouldShowInstruction = false;
