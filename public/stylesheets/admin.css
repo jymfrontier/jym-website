@@ -1,0 +1,166 @@
+body {
+/*    padding:20px;*/
+    
+}
+
+
+.tab-container {
+    margin-left:150px;
+    margin-top:100px;
+}
+
+.panel {
+    width: 80%;
+    margin-top:100px;
+    margin-left: 10%
+}
+
+.nav-tab {
+    float: left;
+    height: 500px;
+}
+
+.prayer-nav {
+    float:left;
+    height:30px;
+    padding-top: 5px;
+
+}
+
+.jpm-editor-area {
+    background-color:lightgrey;
+    border-radius: 5px;
+}
+
+.jpm-editor-tool {
+    text-align: right;
+    padding:5px;
+}
+
+.prayer-table-options {
+    float:left; 
+    width:75%; 
+    height:30px;
+    padding-top: 5px;
+    text-align: right
+}
+
+.prayer-table-bar {
+
+}
+
+/*
+.prayer-nav-item {
+    width: 30px;
+    vertical-align: center;
+    font-size: 15px;
+    border-right: 1px solid blue;
+}
+*/
+
+.main_intro {
+    background-image: url("/images/home_background.jpg");
+    color:whitesmoke;
+}
+
+.feedback-container {
+    align-items: center;
+    margin-left: 50px;
+    margin-top:50px;
+    width: 800px;
+}
+
+.jumbotron {
+    border-radius: 10px;
+    font-family: "Arial";
+    padding: 20px;
+    text-align: center;
+}
+
+
+/* various Containers */
+
+.main-container {
+/*    background-color: greenyellow;*/
+    height: 700px;
+    margin-left: 50px;
+/*    padding-top: 70px;*/
+    width: 75%
+}
+
+.content-container {
+    width: 800px;
+    float:left;
+    margin-left: 20px;
+/*    background-color: lightblue;*/
+}
+/**********************/
+
+.nav-item {
+}
+
+.nav-item-font {
+    font-size:20px;
+}
+
+.jpm-tab {
+
+/*    width:500px;*/
+
+}
+
+.jpm-tool-bar {
+    margin-bottom: 10px;
+}
+
+.jpm-editor-container {
+    margin-top:5px;
+    margin-bottom: 5px;
+}
+
+.jpm-editor {
+    width: 50%;
+    height:100%;
+    float:left;
+    margin-right:10px;
+    margin-top:15px;
+    
+}
+
+.jpm-editor-preview {
+    float:left;
+    width: 500px;
+    margin-left:20px;
+}
+
+.jpm-newdocument-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+/* JPM editor ui */
+.jpm-textfield {
+    width:180px;
+    text-align: center;
+}
+
+.jpm-help {
+    text-align: right;
+    width:100%;
+/*    background-color: green;*/
+    height:40px;
+}
+
+
+/* JPM Display Table */
+.jpm-displaytable-category {
+    width: 10%;
+}
+
+.jpm-displaytable-title {
+    width: 45%;
+}
+
+.jpm-displaytable-period {
+    width: 25%;
+}

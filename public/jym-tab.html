@@ -1,0 +1,35 @@
+<div ng-show="tabCtrl.isSelected(2)" ng-controller="JpmController as jpmCtrl" class="jpm-tab" id="jpm">
+<!--
+    <ul class="nav nav-pills prayer-nav">
+        <li class="prayer-nav-item"><a href="#">jpm</a></li>
+        <li class="prayer-nav-item"><a href="#">jym</a></li>
+        <li class="prayer-nav-item"><a href="#">all</a></li>
+    </ul>
+-->
+    <div class="prayer-table-bar" ng-show="jpmCtrl.shouldDisplay()">
+        <div class="prayer-nav">
+            display: 
+            <a href="#">jpm |</a>
+            <a href="#"> jym |</a>
+            <a href="#"> all</a>
+        </div>
+        <div class="prayer-table-options">order by: <a href="#">asc</a> | <a href="#">desc</a></div>
+        <div align="right"><a href="#" class="btn btn-success btn-sm" ng-click="jpmCtrl.turnOn()">New</a></div>
+    </div>
+    <jym-editor></jym-editor>
+    <div ng-show="jpmCtrl.shouldDisplay()" class="jpm-tab" id="jpm-displaytable">
+<!--        <div align="right"><button class="btn btn-default jpm-newdocument-button" ng-click="jpmCtrl.turnOn()">Create new prayer request</button></div>-->
+        <table class="table">
+            <tr>
+                <th class="jpm-displaytable-category">Category</th> 
+                <th class="jpm-displaytable-title">Title</th> 
+                <th class="jpm-displaytable-period">Week</th>
+                <th>Scheduled</th>
+                <th>Status</th>
+            </tr>
+            <tr ng_repeat="prayer in jpmCtrl.prayers">
+                <td>{{prayer.category}}</td> <td>{{prayer.title}}</td> <td>{{prayer.week}}</td> <td>{{prayer.upload_date}}</td> <td>{{prayer.status}}</td>
+            </tr>
+        </table>
+    </div>
+</div>

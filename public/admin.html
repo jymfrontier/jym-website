@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html ng-app="admin">
+    <head>
+<!--        <link rel="stylesheet" type="text/css" href="bootstrap.min.css">-->
+<!--
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+-->
+        <link rel="stylesheet" type="text/css" href="./stylesheets/bootstrap.min.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/admin.css">
+        <link rel="stylesheet" type="text/css" href="./stylesheets/jquery-ui.min.css">
+<!--        <link rel="stylesheet" type="text/css" href="jquery-ui.min.css">  -->
+        
+<!--        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.16/angular.min.js"></script>-->
+        <script type="text/javascript" src="./javascripts/angular.min.js"></script>
+<!--        <script type="text/javascript" src="angular.min.js"></script>-->
+        <script type="text/javascript" src="./javascripts/app.js"></script>
+<!--        <script type="text/javascript" src="jquery-1.11.3.min.js"></script>-->
+<!--        <script src="//code.jquery.com/jquery-1.11.3.min.js"></script>-->
+        <script type="text/javascript" src="./javascripts/jquery-1.11.3.min.js"></script>
+        <script type="text/javascript" src="./javascripts/jquery-ui.min.js"></script>
+        <script type="text/javascript" src="./javascripts/bootstrap.min.js"></script>
+<!--        <script src="http://code.jquery.com/ui/1.11.4/jquery-ui.js"></script>-->
+<!--        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>-->
+<!--        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.0/js/bootstrap.min.js"></script>-->
+    </head>
+    <body>
+        <div ng-controller="TabController as tabCtrl">
+        <nav class="navbar navbar-default navbar-static-top">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <a class="navbar-brand" href="#">JYM</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li ng-click="tabCtrl.selectTab(1)" ng-class="{active: tabCtrl.isSelected(1)}"><a href="#">Home</a></li>
+                        <li ng-click="tabCtrl.selectTab(2)" ng-class="{active: tabCtrl.isSelected(2)}"><a href="#">Prayers</a></li>
+                        <li ng-click="tabCtrl.selectTab(3)" ng-class="{active: tabCtrl.isSelected(3)}"><a href="#">Media</a></li>
+                        <li ng-click="tabCtrl.selectTab(4)" ng-class="{active: tabCtrl.isSelected(4)}"><a href="#">Help</a></li>
+                        <li ng-click="tabCtrl.selectTab(5)" ng-class="{active: tabCtrl.isSelected(5)}"><a href="#">Feedback</a></li>
+                    </ul>
+                    <ul class="nav navbar-nav navbar-right nav-tabs">
+                        <li class="dropdown">
+                          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">English <span class="caret"></span></a>
+                          <ul class="dropdown-menu" role="menu">
+                            <li><a href="#">한국어</a></li>
+                          </ul>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main-container">
+            <home-tab></home-tab>
+            <jpm-tab></jpm-tab>
+            <div ng-show="tabCtrl.isSelected(5)" class="feedback-container">
+                <div class="jumbotron">
+                    <h3>Thank you for your support.  Without your precious feedback, we won't be able to create a better service for the servants of God.  All your feedback would be appreciated.</h3>
+                </div>
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email">
+                    </div>
+                    
+                    <label for="exampleInputEmail1">Subject</label>
+                    <div class="input-group">
+                      <div class="input-group-btn">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown" aria-expanded="false">Category <span class="caret"></span></button>
+
+                        <ul class="dropdown-menu" role="menu">
+                          <li><a href="#">Feature suggestion</a></li>
+                          <li><a href="#">Report Bug</a></li>
+                          <li><a href="#">Impovement suggestion</a></li>
+                        </ul>
+                      </div><!-- /btn-group -->
+                      <input type="text" class="form-control" aria-label="..." placeholder="What type of UI do you have concern with?">
+                    </div><!-- /input-group -->
+                    </br>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">Feedback</label>
+                        <textarea class="form-control" rows="10" placeholder="Please type your opinions here"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <div class="col-sm-offset-2 col-sm-10">
+                          <button type="submit" class="btn btn-default">Submit</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    </body>
+</html>
